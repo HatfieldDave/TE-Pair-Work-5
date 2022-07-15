@@ -1,8 +1,7 @@
 * {
     box-sizing: content-box;
-    color: #FF6B6B;
     margin: 0;
-    
+    font-family: Indie Flower, sans-serif;
 }
 
 #ode-header {
@@ -11,6 +10,8 @@
     grid-template-areas: "header nav";
     align-items: center;
     padding-left: 15px;
+    color: #FF6B6B;
+
 }
 
 h1 {
@@ -18,11 +19,15 @@ h1 {
 }
 h1#ode-header {
     grid-area: header;
+    color: #FF6B6B;
 
 }
 
 nav#ode-header {
     grid-area: nav;
+    color: #FF6B6B;
+    
+
 }
 
 nav ul {
@@ -31,6 +36,13 @@ nav ul {
     justify-content: space-between;
     list-style: none;
     margin: 45px 25px 45px 25px;
+    color: #FF6B6B;
+    
+
+}
+
+a {
+    color: #FF6B6B;
 
 }
 
@@ -39,6 +51,7 @@ nav ul {
     display: grid;
     grid-template-areas: "title picture"
     "facts picture";
+    
 }
 
 section#fun-facts h2 {
@@ -52,6 +65,8 @@ section#fun-facts h2 {
 
 #fun-facts-info {
     grid-area:facts;
+    
+    
 }
 
 #form {
@@ -108,22 +123,30 @@ article#rabbits-evil {
     display: grid;
     grid-template-areas: 
     "H2 p1"
-    "text p1"
     "text p1";
-    column-gap: 50px;
+    column-gap: 10px;
+    justify-items: center;
+    grid-template-columns: 10fr 7fr;
+    grid-template-rows: 1fr 10fr;
 }
 
 h2#article-title {
     grid-area: H2;
+    
+    
 }
 
 div#text {
     grid-area: text;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%
 }
 
 img#p1 {
     grid-area: p1;
-    width: 400px;
+    width: 100%;
     
 }
 
@@ -133,6 +156,8 @@ footer {
     background-color: #1A535C;
     justify-content: space-between;
     align-items: center;
+    color: #FF6B6B;
+
 }
 
 img#p2 {
