@@ -1,3 +1,78 @@
 * {
     box-sizing: content-box;
 }
+
+#ode-header {
+    background-color: magenta;
+    display: grid;
+    grid-template-areas: "header nav";
+    align-items: center;
+    padding-left: 15px;
+}
+
+h1 {
+    font-size: 26px;
+}
+h1#ode-header {
+    grid-area: header;
+
+}
+
+nav#ode-header {
+    grid-area: nav;
+}
+
+nav ul {
+    background-color: cyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 45px 25px 45px 25px;
+
+}
+
+#fun-facts {
+    background-color: yellow;
+    display: grid;
+    grid-template-areas: "title picture"
+    "facts picture";
+}
+
+section#fun-facts h2 {
+    grid-area: title;
+}
+
+#stock-rabbit{
+    grid-area: picture;
+    width: 100%;
+}
+
+#fun-facts-info {
+    grid-area:facts;
+}
+
+#form {
+    display: grid;
+    grid-template-areas: "form-header form"
+    "paragraph form";
+}
+
+#form h3 {
+    grid-area: form-header;
+}
+
+#form p {
+    grid-area: paragraph;
+}
+
+#form form {
+    grid-area: form;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
