@@ -1,9 +1,12 @@
 * {
     box-sizing: content-box;
+    color: #FF6B6B;
+    margin: 0;
+    
 }
 
 #ode-header {
-    background-color: magenta;
+    background-color: #1A535C;
     display: grid;
     grid-template-areas: "header nav";
     align-items: center;
@@ -23,7 +26,6 @@ nav#ode-header {
 }
 
 nav ul {
-    background-color: cyan;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,7 +35,7 @@ nav ul {
 }
 
 #fun-facts {
-    background-color: yellow;
+    background-color: #FFE66D;
     display: grid;
     grid-template-areas: "title picture"
     "facts picture";
@@ -53,6 +55,7 @@ section#fun-facts h2 {
 }
 
 #form {
+    background-color: #FFE66D;
     display: grid;
     grid-template-areas: "form-header form"
     "paragraph form";
@@ -74,5 +77,72 @@ section#fun-facts h2 {
     align-items: center;
     justify-content: space-evenly;
 }
+
+div#pop-hated-rabbits {
+    background-color: #4ECDC4;
+    display: grid;
+    grid-template-areas: 
+    "pic pop-rabbits"
+    "pic hated-rabbit";
+    column-gap: 100px;
+}
+
+img#monty {
+    grid-area: pic;
+    height: 100%;
+    
+}
+
+section#pop-rabbits {
+    grid-area: pop-rabbits;
+    
+}
+
+section#hated-rabbits {
+    grid-area: hated-rabbit;
+    
+}
+
+article#rabbits-evil {
+    background-color: #FFE66D;
+    display: grid;
+    grid-template-areas: 
+    "H2 p1"
+    "text p1"
+    "text p1";
+    column-gap: 50px;
+}
+
+h2#article-title {
+    grid-area: H2;
+}
+
+div#text {
+    grid-area: text;
+}
+
+img#p1 {
+    grid-area: p1;
+    width: 400px;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #1A535C;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img#p2 {
+    
+    height: 30px;
+}
+
+img#p3 {
+    
+    height: 30px;
+} 
 
 
